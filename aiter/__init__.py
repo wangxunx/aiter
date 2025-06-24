@@ -56,6 +56,7 @@ from .ops.moe_sorting import *
 from .ops.pos_encoding import *
 from .ops.cache import *
 from .ops.rmsnorm import *
+from .ops.vector_add import *
 from .ops.communication import *
 from .ops.rope import *
 from .ops.topk import *

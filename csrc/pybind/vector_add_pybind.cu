@@ -1,0 +1,9 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2024, Advanced Micro Devices, Inc. All rights reserved.
+#include "rocm_ops.hpp"
+#include "vector_add.h"
+
+PYBIND11_MODULE(TORCH_EXTENSION_NAME, m)
+{
+    VECTOR_ADD_PYBIND;
+}

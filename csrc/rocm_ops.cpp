@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 // Copyright (C) 2024-2025, Advanced Micro Devices, Inc. All rights reserved.
 #include "activation.h"
+#include "vector_add.h"
 #include "aiter_enum.h"
 #include "aiter_operator.h"
 #include "asm_gemm_a4w4.h"
@@ -68,6 +69,7 @@ PYBIND11_MODULE(TORCH_EXTENSION_NAME, m)
     GEMM_A8W8_ASM_PYBIND;
     GEMM_A4W4_ASM_PYBIND;
     ACTIVATION_PYBIND;
+    VECTOR_ADD_PYBIND;
     ATTENTION_ASM_MLA_PYBIND;
     ATTENTION_CK_PYBIND;
     MOE_SORTING_PYBIND;

@@ -25,6 +25,18 @@
         "verbose": "False",
         "blob_gen_cmd": "''"
     },
+    "module_vectoradd": {
+        "srcs": [
+            "f'{AITER_CSRC_DIR}/kernels/vector_add_kernels.cu'",
+            "f'{AITER_CSRC_DIR}/pybind/vector_add_pybind.cu'"
+        ],
+        "flags_extra_cc": [],
+        "flags_extra_hip": [],
+        "extra_ldflags": "None",
+        "extra_include": [],
+        "verbose": "False",
+        "blob_gen_cmd": "''"
+    },
     "module_attention": {
         "srcs": [
             "f'{AITER_CSRC_DIR}/py_itfs_ck/attention_kernels.cu'",

@@ -9,6 +9,9 @@
     m.def("gelu_and_mul", &aiter::gelu_and_mul, "Activation function used in GELU.");   \
     m.def("gelu_tanh_and_mul", &aiter::gelu_tanh_and_mul, "Activation function used in GELU tanh.");
 
+#define VECTOR_ADD_PYBIND                                                              \
+    m.def("vector_add_cu", &aiter::vector_add, "Vector addition function.");
+
 #define AITER_OPERATOR_PYBIND                                                   \
     m.def("add", &aiter_add, "apply for add with transpose and broadcast.");    \
     m.def("mul", &aiter_mul, "apply for mul with transpose and broadcast.");    \
